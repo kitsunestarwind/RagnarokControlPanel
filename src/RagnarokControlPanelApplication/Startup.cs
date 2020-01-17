@@ -1,3 +1,7 @@
+// <copyright file="Startup.cs" company="Silvermoon Online">
+// Copyright (c) Silvermoon Online. All rights reserved.
+// </copyright>
+
 namespace RagnarokControlPanelApplication
 {
     using System;
@@ -15,7 +19,7 @@ namespace RagnarokControlPanelApplication
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            this.Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -36,9 +40,11 @@ namespace RagnarokControlPanelApplication
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
