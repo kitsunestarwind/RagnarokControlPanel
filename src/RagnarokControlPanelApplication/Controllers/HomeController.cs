@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using RagnarokControlPanelApplication.Models;
+﻿// <copyright file="HomeController.cs" company="Silvermoon Online">
+// Copyright (c) Silvermoon Online. All rights reserved.
+// </copyright>
 
 namespace RagnarokControlPanelApplication.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
+    using RagnarokControlPanelApplication.Models;
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> logger;
